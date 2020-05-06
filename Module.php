@@ -22,7 +22,7 @@
 		 * @param string $subdomain
 		 * @return array
 		 */
-		public function get_records(string $domain, string $subdomain = ''): array
+		public function provisioning_records(string $domain, string $subdomain = ''): array
 		{
 			$ttl = $this->dns_get_default('ttl');
 
