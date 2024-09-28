@@ -38,7 +38,7 @@
 				new \Opcenter\Dns\Record($domain,
 					['name' => $subdomain, 'ttl' => $ttl, 'rr' => 'MX', 'parameter' => '10 ALT4.ASPMX.L.GOOGLE.COM.']),
 				new \Opcenter\Dns\Record($domain,
-					['name' => rtrim("mail.${subdomain}",'.'), 'ttl' => $ttl, 'rr' => 'CNAME', 'parameter' => 'ghs.google.com.']),
+					['name' => rtrim("mail.{$subdomain}",'.'), 'ttl' => $ttl, 'rr' => 'CNAME', 'parameter' => 'ghs.google.com.']),
 				new \Opcenter\Dns\Record($domain,
 					['name'      => $subdomain,
 					 'ttl'       => $ttl,
